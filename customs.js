@@ -14,7 +14,7 @@ $( document ).ready(function() {
             $(el).get(0).currentTime = 0;
 
             if(i == curvid) {
-                $(el).attr("poster","img/thumbnail.png");
+                $(el).attr("poster","/howtoplay.github.io/thumbnail.png");
                 $(el).show();
                 el.play();
             }

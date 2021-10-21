@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play Slingo</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="bootstrap-4.0.0/dist/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="script/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="script/customs.js"></script>
+    
+</head>
+<body>
+
+    <div id="portrait-mode">
+        <div class="row no-gutters">
+            <!-- <div class="col-md-12 no-gutters d-flex justify-content-center align-items-center tilt-div">
+                <h3>Turn your device in landscape mode.</h3>
+            </div> -->
+            <div class="col-md-12 no-gutters d-flex justify-content-center align-items-center tilt-div">
+                <img src="img/Tilt.gif">
+            </div>
+        </div>
+    </div><!--END of ID: portrait-mode-->
+
+    <div id="landscape-mode">
+        <div class="row no-gutters">
+            <div class="col-md-10 no-gutters">
+                <div class="leftside">
+                    <div class="video-container">
+                        <!-- <iframe id="video_player" src="Screen 1.mp4" allow="autoplay"></iframe> -->
+                        <video id="video_player" muted>
+                            <source src="Screen 1.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 2.mp4" type="video/mp4">
+                        </video>
+                        <video id="video_player" muted>
+                            <source src="Screen 3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+
+            <div class="col-md-2 no-gutters d-flex justify-content-center align-items-center">
+                <div class="rightside">
+                    <div class="container-content">
+                        <div class="tutorial-container">
+                            <h2>How to Play Slingo Tutorial</h2>
+                            <ul>
+                                <li>Press on <b>“START GAME”</b> button and the game will start. Each game lasts 10 spins.</li>
+                                <li>On the left of the screen, press on the arrow at the stake and select the amount you’re betting on in this game.</li>
+                                <li>This is the reel. Each spin the user will see numbers and symbols on the reel.</li>
+                            </ul>
+                        </div>
+                        <div class="control-div">
+                            <button disabled><img id="back-btn" src="img/previous-line-disabled.png" alt="back-btn"></button>
+                            <button><img id="play-btn" src="img/pause.png" alt="play-btn"></button>
+                            <button><img id="next-btn" src="img/next-text.png" alt="next-btn"></button>
+                        </div><!--END of class: control-div-->  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--END of ID: landscape-mode-->
+    
+
+    <script type="text/javascript" src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

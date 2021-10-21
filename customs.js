@@ -49,7 +49,7 @@ $( document ).ready(function() {
     /****** BACK **********/
     $("#back-btn").on('click', () => {
         $(videoElements[curvid]).off('ended');
-        $('#play-btn').attr("src","img/play.png");
+        $('#play-btn').attr("src","/howtoplay.github.io/play.png");
 
         updateVideoVisibility(curvid - 1);
         updateTutorialVisibility(curtur - 1);
@@ -57,25 +57,25 @@ $( document ).ready(function() {
         if (curvid==0) {
             $('#back-btn').prop('disabled', true);
             $('#back-btn').css({pointerEvents: "none"});
-            $('#back-btn').attr("src","img/previous-line-disabled.png");
+            $('#back-btn').attr("src","/howtoplay.github.io/previous-line-disabled.png");
         }
         $("#next-btn").prop('disabled', false);
         $('#next-btn').css({pointerEvents: "auto"});
-        $('#next-btn').attr("src","img/next-text.png");
+        $('#next-btn').attr("src","/howtoplay.github.io/next-text.png");
     });
 
 
     /****** PLAY **********/
     $("#play-btn").on('click', () => {
-        if($('#play-btn').attr('src') === 'img/pause.png') {
-            $('#play-btn').attr("src","img/play.png");
+        if($('#play-btn').attr('src') === '/howtoplay.github.io/pause.png') {
+            $('#play-btn').attr("src","/howtoplay.github.io/play.png");
             $(videoElements[curvid]).trigger('pause');
             console.log("testPause");
         } else {
-            $("#play-btn").attr("src","img/pause.png");
+            $("#play-btn").attr("src","/howtoplay.github.io/pause.png");
             $(videoElements[curvid]).trigger('play');
             $(videoElements[curvid]).on('ended', () => {
-                $("#play-btn").attr("src","img/replay.png");
+                $("#play-btn").attr("src","/howtoplay.github.io/replay.png");
                 console.log("testPLay");
             })
         }
@@ -86,7 +86,7 @@ $( document ).ready(function() {
     /****** NEXT **********/
     $("#next-btn").on('click', () => {
         $(videoElements[curvid]).off('ended');
-        $('#play-btn').attr("src","img/play.png");
+        $('#play-btn').attr("src","/howtoplay.github.io/play.png");
 
         updateVideoVisibility(curvid + 1);
         updateTutorialVisibility(curtur + 1);
@@ -94,16 +94,16 @@ $( document ).ready(function() {
         if(videoElements.length - 1 == curvid) {
             $('#next-btn').prop('disabled', true);
             $('#next-btn').css({pointerEvents: "none"});
-            $('#next-btn').attr("src","img/next-text-diabled.png");
+            $('#next-btn').attr("src","/howtoplay.github.io/next-text-diabled.png");
         } else {
             $('#next-btn').prop('disabled', false);
             $('#next-btn').css({pointerEvents: "auto"});
-            $('#next-btn').attr("src","img/next-text.png");
+            $('#next-btn').attr("src","/howtoplay.github.io/next-text.png");
         }
 
         $("#back-btn").prop('disabled', false);
         $('#back-btn').css({pointerEvents: "auto"});
-        $('#back-btn').attr("src","img/previous-line.png");
+        $('#back-btn').attr("src","/howtoplay.github.io/previous-line.png");
     });
 });
 
